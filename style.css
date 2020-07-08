@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Verdana', sans-serif;
+background-image: url('bg.png');
+background-size: cover;
+background-position: top center;
+}
+
+.app-wrap{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input{
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 5px 5px 5px 5px;
+    
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.5s ease-out;
+}
+
+header input:focus{
+    background-color: rgba(255,255,255,0.6);
+}
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+} 
+
+.location .date{
+    color: #fff;
+    font-size: 16px;    
+}
+
+.status .temperature{
+color: #fff;
+font-size: 100px;
+font-weight: 900;
+margin: 30px 0px;
+text-shadow: 2px 12px rgba(0,0,0,0.3);
+}
+
+.status .temperature span{
+    font-weight: 500;
+}
+
+.status .weather{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0,0,0,0.4);
+}
+
+.status .low-hi{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
